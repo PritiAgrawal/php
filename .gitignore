@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var image1=new Image();
+        image1.src="Images/comp1.jpg"
+         var image2=new Image();
+        image2.src="Images/dave6.jpg"
+         var image3=new Image();
+        image3.src="Images/priti1.jpg"
+        </script>
+         <style>
+             body{
+                 background-color: grey;
+               /*  background-image: url("Images/priti1.jpg");
+                 background-repeat: repeat-y;*/
+              
+             }
+        </style>
+    </head>
+   
+    <body>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                </** logo **>
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Radhey Computech</a>
+                </div>
+                 </** New Item **>
+                 <div>
+                     <ul class="nav navbar-nav">
+                         <li class="active"><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                           <li><a href="#">Items Available</a></li>
+                     </ul>
+                 </div>
+            </div>
+    </nav>
+         <div class="conatiner-fluid">
+             <div class="row">
+                 <div class="col-md-12" style="background: lightblue">
+                     <img src="Images/shop.jpg" class="img-responsive"></div>
+        </div>
+             </div>
+        <br>
+        <br>
+        <div class="row">                          
+         
+            
+            <div class="col-sm-6 col-md-4">
+              
+             <div class="modal-content">
+                        
+                        <!-- header -->
+                        <div class="modal-header">
+                           
+                            <h3 class="modal-title">Log In Portal for Administrator</h3>
+                        </div>
+                        <!-- body(form) -->
+                        <div class="modal-body">
+                            <form role="form" method="POST" action="Connectivity.php"> 
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="pass" placeholder="Password">
+                                </div>
+                                <input id="button"  class="btn btn-primary btn-block" type="submit" name="submit" value="Log-In"> 
+                                 
+                            </form>
+                            
+                        </div>
+                        
+                        <!-- button 
+                        <div class="modal-footer">
+                            <button class="btn btn-primary btn-block">Log In</button>
+                        </div> -->
+                    </div>
+               
+                <br> <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/ClHu3XQBnGU">
+                </iframe>
+                
+            </div>        
+                   </div>
+            
+             <div class="col-sm-6 col-md-4">
+    
+                 
+                 <image src="Images/comp1.jpg" name="slide" width="400" height="400">
+        
+                 <script type="text/javascript">
+            var step=1
+            function slideit(){
+                document.images.slide.src=eval("image"+step+".src")
+                if(step<3)
+                    step++
+                else
+                    step=1
+                setTimeout("slideit()",2500)
+               
+            }
+            slideit() 
+            </script>
+                 
+                 
+        
+                   </div>
+            
+            <div class="col-sm-6 col-md-4" style="background: lightcyan">
+                <h2>  For Customers</h2>
+              <center>
+                    <table class="table">
+                        <tr><th>
+                                <p style="font-size:25px"><a href="shownew.php">View Data  </a></th></tr>
+                        <tr> <th> <p style="font-size:25px"><a href="record.php">Insert new record </a></th></tr>
+                    </table>
+                </center>
+                
+                
+             
+                   </div>
+            
+        </div>
+                
+        
+          
+    
+    </body>
+</html>
+
+
+
+
